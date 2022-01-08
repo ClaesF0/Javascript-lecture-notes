@@ -1,4 +1,54 @@
+// LVL 1 process
+console.log ("claes");
+console.log (7+8);
+//Console log the current day of the week
+
+//var d=new Date();
+//console.log(d.getDay());
+
+/*
+var d=new Date();
+
+var d= weekday
+var weekday=new Array(8);
+weekday[0]="nei"
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="Thursday";
+weekday[5]="Friday";
+weekday[6]="Saturday";
+weekday[7]="Sunday";
+console.log("Today is "+ weekday[i])
+*/
+
+var options = { weekday: 'long'};
+console.log("I dag er det "+new Intl.DateTimeFormat('no-NO', options).format());
+
+//Console log 3 multiplied by 6
+console.log (3*6)
+
+//Using the alert() method, alert your name, e.g. alert(“Marie”);
+//alert("Claes!")
+
+var pet;
+/*Above we've created a variable called pet. 
+We haven't given pet a value, so it is empty or undefined. 
+If you console log pet it will return a value of undefined.
+
+Giving a variable a value when you declare it 
+is called initialising the variable. 
+
+To declare a variable we use var,
+a name of our choice and a value if we are initialising it.*/
+var pet = "dog";
+/*We've initialised the variable pet with the string value "dog". 
+We can say we've assigned the value "dog" to pet, 
+and now pet contains the value "dog".*/
+
 //lecture notes
+/* 
+
 
 var someNumber = 10; 
 console.log (typeof someNumber);
@@ -64,14 +114,16 @@ if(isLoggedIn === true){
     console.log('The user is not logged in');
 }
 
-
+/*
 var inputIsValid = false;
 if (inputIsValid === false) {
     alert ("please fill in the email field")
 } else {
     // do nothing...
 }
+*/
 
+/*
 var ageOfCar = 12; 
 
 if (ageOfCar < 5) {
@@ -210,7 +262,10 @@ for (var i = 0; i <= numberOfColors; i++){
 var counter = 100;
 while (counter >= 10) {
     console.log("subtracting:", counter);
-    Counter--
+    counter--
 }
 
-//end of lecture 3
+
+
+//end of lecture 3 
+*/
