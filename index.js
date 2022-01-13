@@ -269,3 +269,319 @@ while (counter >= 10) {
 
 //end of lecture 3 
 */
+
+// LECTURE 4 
+console.log("Lesson 4")
+
+//The logical AND (&&) operator
+//The logical OR (||) operator
+
+//we use && for AND logical operator 
+
+var selectedNumber = 30; 
+if (selectedNumber >= 10 && selectedNumber <= 50) {
+    console.log("The selected number is within range")
+}
+// 30 => 10 = true
+//30 <= femti = true
+
+var selectedNumber = 5; 
+if (selectedNumber >= 10 && selectedNumber <= 50) {
+    console.log("The selected number is within range")
+}
+
+// OR operator 
+var dayOfTheWeek = "Saturday";
+if (dayOfTheWeek === "Saturday" || dayOfTheWeek === "Sunday") {
+    console.log("It's the weekend");
+}
+
+var dayOfTheWeek = "Sunday";
+if (dayOfTheWeek === "Saturday" || dayOfTheWeek === "Sunday") {
+    console.log("It's the weekend");
+}
+
+if(true && true) {
+    console.log('here')
+}
+
+if (true ||false) {
+    console.log ("here 2")
+}
+
+
+//undefined and null
+
+var variable;
+
+if (variable === undefined) {
+    console.log("aw man no data!");
+}
+
+/*
+if (variable === null) {
+    console.log("aw man still no data!");
+}*/
+
+//!== (strict not comparison)
+//!= (loose not comparison)
+
+//LCTR 5: ARRAYS = containers 
+/*
+var emptyArray = [string, string, string, string];
+var emptyArray = [number, number, number, number];
+var emptyArray = [boolean, boolean, boolean, boolean];
+var emptyArray = [boolean, numer, string, mixed];
+*/
+
+//how many items in the array: 
+var color = ["red", "green", "blue", "yellow"];
+var numberOfItems = color.length;
+console.log(color.length);
+
+
+var color = ["red", "green", "blue", "yellow"];
+
+console.log(color.push("black")); //add to the back / new item last
+console.log(color); // vis i konsoll
+
+console.log(color.pop("black")); //remove from the back / discard item
+console.log(color); // vis i konsoll
+
+console.log(color.unshift("chartreuse")); //add to the front / new item first
+console.log(color); // vis i konsoll
+
+console.log(color.shift("chartreuse")); //remove from the front / discard first item 
+console.log(color); // vis i konsoll
+
+console.log(color[0]);
+/*
+const myGirls = ["Cecilie" , "Lone"];
+const myBoys = ["Linus" , "Billy-Børre"];
+concat myBoys = 
+*/
+
+var planets = [ //0
+    "earth", //0
+    "mars", //1
+    ["hesham", "magnus", "lisa"], //2
+    ["bmw", "polo", "mg", "volvo"]//3
+];
+console.log(planets[0]);
+console.log(planets[1]);
+console.log(planets[2]);
+console.log(planets[2][0]);
+console.log(planets[2][1]);
+
+//OBJECT
+
+var mobile = {
+    name : "K40 Gaming",
+    color : "black",
+    ram : 8, 
+    storage: 512
+}
+
+console.log(mobile.color);
+console.log(mobile.name);
+console.log(mobile.ram);
+console.log(mobile.storage);
+console.warn(mobile.storage);
+console.trace(mobile.storage);
+console.log(mobile.storage);
+/*
+var postItem = {
+    imageUrl: "/path/to/bee-picture",
+    likeCounter: 80,
+    likedByUser: true,
+    filter: false,
+};
+*/
+//alert("hva med sjokoladebolle da?")
+
+var mobilePhones = [
+    { //0
+        name : "nokia n90",
+        color: "blue",
+        storage: 256,
+    },
+    {//1
+        name : "nokia 3310",
+        color: "blue and eggshell",
+        storage: 8,
+    },
+    {//2
+        name : "motorola razor flip",
+        color: "black",
+        storage: 256,
+    },
+    {//3
+        name : "Ericsson GSM",
+        color: "black",
+        storage: 1,
+    }
+];
+
+for (var i = 0 ; i < mobilePhones.length; i++){
+    var mobileName = mobilePhones[i].name;
+    console.log(mobileName[i])
+
+    console.log(mobilePhones[i].color)
+}
+
+/* API stands for Application Programming Interface.
+REST: representational state transfer */
+
+function logWord(){
+    // code that will run
+};
+
+function logWord(){
+    console.log("Hello World")
+};
+
+logWord(); 
+
+var name = "Hesham";
+
+console.log(name);
+
+logWord();
+
+logWord();
+
+logWord();
+
+function logWord(theWord){
+    console.log(theWord);
+};
+
+logWord(100);
+
+function logTwoWords (name, age) {
+    console.log("My name is " + name + " and my age is: " + age)
+}
+
+logTwoWords ("Hesh" , 30);
+
+
+function someName (name){
+    console.log(name)
+}
+
+someName ("Billy børre")
+someName ("sture-sally")
+someName ("boris")
+
+function printLikeCounter (likeCounter) {
+    return likeCounter + "likes";
+};
+printLikeCounter(89);
+printLikeCounter(90);
+printLikeCounter(91);
+
+function getNumberOfLikes (numberOfLikes) {
+    return numberOfLikes + " Likes";
+}
+
+var totalNumberOfLikes = getNumberOfLikes (40); 
+
+console.log(totalNumberOfLikes);
+
+/* please write a function which takes two numbers
+then take the sum of these two numbers and console log it */
+//pls name this function getSum
+/*
+function getSum (one, two) {
+    var one = 1;
+    var two = 2;
+    console.log(one + two);
+}*/
+
+function getSum (one, two) {
+    console.log(one + two);
+};
+
+getSum(1, 2)
+
+function getMultiply (noe , noeAnnet) {
+    console.log(noe * noeAnnet);
+};
+
+/*getMultiply(3 , 5);
+
+var x = square(10);
+console.log(x);
+var x = square(4)*/
+
+/*
+Declare a number variable has a name someNumber
+convert this someNumber variable to a string
+declare another variable called someText assign the
+someNumber variable to it 
+console the someText variable 
+
+
+var someNumber = 34;
+var someText = someNumber.toString();
+console.log(someString);*/
+
+//Number(true);
+//Number("10");
+//Number("10   ");
+//Number("10.33");
+//Number("");
+//Number("Hesh");
+
+// declare a variable called someString
+//var someString = "Hesham";
+//assign your name to this string variable called someString
+// convert this String to a Number and console log it
+/*var x = number(someString);
+console.log(x);*/
+
+//someString="10";
+//someString="101";
+//someString="hesh 0";
+//someString="hesh";
+//someString=true;
+//someString=false;
+
+var fruits = ["Banana" , "Orange" , "Apple" , "Mango"];
+var sortedArray = fruits.sort();
+console.log(sortedArray);
+
+const points = [40, 100, 1, 5 , 25,10];
+points.sort(function(a,b){return b-a});
+console.log (points);
+
+
+console.log (points);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
