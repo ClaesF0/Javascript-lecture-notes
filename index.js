@@ -558,17 +558,90 @@ console.log (points);
 
 console.log (points);
 
+console.log("Question 1");
+  // Create an empty user object.
+        // Add the name property with the value Hesh.
+        // Add property surname with value Peter.
+        // Change name to Sokki.
+        // Remove the name property from the object.
+
+
+     
+        console.log("Question 2");
+        // Create an isEmpty(obj) function that returns true if the
+        // object has no properties and false if there is
+        // at least one property.
+
+        function isEmpty(obj) {
+            for (var key in obj) {
+                return false;
+            }
+            return true;
+        }
+
+        /*
+        console.log("Question 3");
+        // Given an array of numbers: [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90].
+        // 1) Find the maximum and minimum value of the array.
+        var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+
+        console.log(arr);
+
+        function compareNumeric(a, b) {
+            return a - b
+        };
+
+        var tempArr = arr.sort(compareNumeric);
+        var minValue = tempArr[0];
+        var maxValue = tempArr[tempArr.length - 1];
+
+        document.write("Min value: " + minValue + '<br/>' + "Max value: " + maxValue + '<br/>');
+
+
+        // why array sort doesn't sort correctly
+
+        // https://stackoverflow.com/questions/7000851/array-sort-doesnt-sort-numbers-correctly
+
+*/
+        var arr = [1,2,31,24,-67,5,3,555,79,-4,21,33,89,-90];
+
+        console.log('before sorting: ', arr);
+
+        function compareNumeric(a,b){
+            return a - b;
+        }
+
+        var tempArr = arr.sort(compareNumeric);
+        console.log('my new array: ', tempArr);
+
+        var minValue = tempArr[0];
+        console.log(minValue)
+
+        var maxValue = tempArr[tempArr.length - 1]; //last item in the array
+        console.log(maxValue);
+
+        //document.write
+        console.log(
+            "My max value is " + maxValue +" and my min value is " + minValue);
 
 
 
 
+var someObject = { //empty object 
+};
 
+var someObject = {
+    name: "hesham" // object with one property
+}
 
+function isEmpty(obj) {
+    for (var key in obj) {
+        return false;    
+    }
+    return true
+    }
 
-
-
-
-
+    console.log(isEmpty(someObject));
 
 
 
